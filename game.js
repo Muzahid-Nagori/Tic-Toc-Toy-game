@@ -5,7 +5,7 @@ let msgcontainer = document.querySelector('.msg-container')
 let msg = document.querySelector('#msg')
 
 let player1 = prompt("enter name first player (0);");
-let player2 = prompt("enter name second player (0);");
+let player2 = prompt("enter name second player (x);");
 let currentplayer = player1;
 let  turn0 = true;
 
@@ -63,6 +63,7 @@ box.addEventListener("click", () =>{
 const showinnner = (winner) => {
     msg.innerText = `Congratulations ${winner}, you are the winner!`;
     msgcontainer.classList.remove('hide');
+    resetbtn.style.display = 'none';
 }
 
 const checkwinner = () => {
