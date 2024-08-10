@@ -36,6 +36,7 @@ const newgame = () =>  {
     currentplayer = player1;
     inabledbox();
 msgcontainer.classList.add('hide')
+resetbtn.style.display = 'inline-block';
 
     }
 
